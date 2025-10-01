@@ -65,6 +65,10 @@ plot_10X_metrics: True
 # Doublet detection on RNA modality
 scr:
   run: True
+  # option to run scrublet per sample expected doublet rate, expects a csv with sample_id and expected_doublet_rate columns
+  per_sample: False
+  expected_doublet_rate_csv:
+  # if per_sample is False, this value is used for all samples
   expected_doublet_rate: 0.06
   sim_doublet_ratio: 2
   n_neighbours: 20
